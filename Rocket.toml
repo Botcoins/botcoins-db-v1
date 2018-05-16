@@ -1,0 +1,9 @@
+[global]
+address = "localhost"
+port = 8000
+workers = 4
+log = "normal"
+
+[global.limits]
+forms = 2048
+json = 4096
