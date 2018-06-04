@@ -4,6 +4,24 @@ version = "0.1.0"
 authors = ["ConcurrentMarxistGC <concurrentmarxistgc@users.noreply.github.com>"]
 
 [dependencies]
+# Frontend
 rocket = "0.3.10"
 rocket_codegen = "0.3.10"
+# Global variables
 lazy_static="*"
+# Serialization
+serde="*"
+serde_derive="*"
+serde_json="*" # Output
+bincode="*" # LMDB serialization
+# Internal storage
+lmdb-rs="*"
+# Logging
+log="*"
+# Fetching
+scheduled-thread-pool="*"
+reqwest="*"
+
+[dependencies.botcoins-objects]
+git = "https://github.com/Botcoins/botcoins-objects"
+features = ["serverside"]
